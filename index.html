@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -21,68 +21,85 @@
     <![endif]-->
 
     <link href="css/custom.css" rel="stylesheet">
+
+    <script src="js/trianglify.js"></script>
+    <link href="css/trianglify.css" rel="stylesheet">
 </head>
 <body>
-	<!-- Static navbar -->
+    <div id="bg"></div>
+    <!-- Static navbar -->
     <nav class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Second Magenta</a>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Second Magenta</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Software <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header">Design</li>
+                            <li><a href="#">WIS</a></li>
+                            <li><a href="#">WIS 2T</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Thermal Imaging</li>
+                            <li><a href="#">WUS</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Consultancy <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Thin Film</a></li>
+                            <li><a href="#">Market Research &amp; Business Planning</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about">About us</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Software <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li class="dropdown-header">Design</li>
-                <li><a href="#">WIS</a></li>
-                <li><a href="#">WIS 2T</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Thermal Imaging</li>
-                <li><a href="#">WUS</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Consultancy <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Thin Film</a></li>
-                <li><a href="#">Market Research &amp; Business Planning</a></li>
-              </ul>
-            </li>
-            <li><a href="#about">About us</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="/contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
     </nav>
 
 
     <div class="container">
 
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Second Magenta</h1>
-        <p>Second Magenta was started in 1997. Initially our contracts focused on updating key software to work in the modern graphical environment. Early success led to the development of a unique suite of modelling and test software. These are now used by a number of leading aircraft windscreen manufacturers across the world.</p>
+        <!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <h1>Second Magenta</h1>
 
-		<p>Business planning and market research skills led to further contract work as new clients and customers became aware of our company. A particular strength in the support of new company start ups was recognised locally and further growth ensued.</p>
+            <p>Second Magenta was started in 1997. Initially our contracts focused on updating key software to work in
+                the modern graphical environment. Early success led to the development of a unique suite of modelling
+                and test software. These are now used by a number of leading aircraft windscreen manufacturers across
+                the world.</p>
 
-		<p>Second Magenta is now recognised by both large and small companies across the world as having a wealth of specialised knowledge and experience that enables them to solve their business problems.</p>
-      </div>
+            <p>Business planning and market research skills led to further contract work as new clients and customers
+                became aware of our company. A particular strength in the support of new company start ups was
+                recognised locally and further growth ensued.</p>
 
-    </div> <!-- /container -->
+            <p>Second Magenta is now recognised by both large and small companies across the world as having a wealth of
+                specialised knowledge and experience that enables them to solve their business problems.</p>
+        </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    </div>
+    <!-- /container -->
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

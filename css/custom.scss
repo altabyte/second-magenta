@@ -1,6 +1,14 @@
 ---
 ---
 
+body {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+
 .navbar {
-	height: 80px;
+  min-height: 50px;
+  background-color: rgba(0, 0, 0, 0);
 }
