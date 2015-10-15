@@ -2,15 +2,15 @@
 ---
 
 $colors: (
+        #FC3EC4/*,
         #801F73,
         #FC90FD,
-        #FC3EC4,
         #B61282,
         #D454CD,
         #FC28FC,
         #950C66,
         #FEB0F3,
-        #BB2FB2,
+        #BB2FB2/**/
 );
 $color: nth($colors, random(length($colors)));
 

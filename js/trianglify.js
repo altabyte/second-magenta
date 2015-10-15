@@ -1,7 +1,7 @@
 /* http://codepen.io/zessx/ */
 /* http://codepen.io/zessx/pen/ZGBMXZ */
 
-var refreshDuration = 10000;
+var refreshDuration = 5000;
 var refreshTimeout;
 var numPointsX;
 var numPointsY;
