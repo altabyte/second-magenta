@@ -1,6 +1,9 @@
 /* http://codepen.io/zessx/ */
 /* http://codepen.io/zessx/pen/ZGBMXZ */
 
+/* Set background_animate to false to disable the animation loop */
+var background_animate = true;
+
 var refreshDuration = 5000;
 var refreshTimeout;
 var numPointsX;
@@ -85,8 +88,9 @@ function onLoad()
         }
     }
 
-    refresh();
-
+    if (typeof background_animate !== 'undefined' && background_animate == true) {
+        refresh();
+    }
 }
 
 function randomize() {
