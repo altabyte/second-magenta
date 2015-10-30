@@ -12,3 +12,25 @@ body {
   min-height: 50px;
   background-color: rgba(0, 0, 0, 0);
 }
+
+
+#home-carousel {
+
+  margin: 24px 0 18px;
+
+  .carousel-inner img {
+    margin: auto;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .carousel-control.left, .carousel-control.right {
+    background-image: none
+  }
+
+  .carousel-indicators li {
+    border: 1px solid darkmagenta;
+    background-color: #999 !important;
+    background-color: rgba(70,70,70,0.15) !important;
+  }
+}
