@@ -42,6 +42,10 @@ body {
   }
 }
 
+#footer {
+  margin-top: 24px;
+}
+
 #home-carousel {
 
   margin: 24px 0 18px;
@@ -63,6 +67,52 @@ body {
   }
 }
 
-#footer {
-  margin-top: 24px;
+#about-us {
+  .profile {
+    position: relative;
+    margin-bottom: 96px;
+
+    .summary {
+      text-align: center;
+
+      img {
+        width: 150px;
+        border-radius: 50%;
+        border: 6px solid silver;
+      }
+
+      p {
+        text-align: center;
+        font-size: 0.8em;
+      }
+    }
+
+    ul {
+      list-style:none;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    li:before {
+      content: "\2713 \0020 ";
+    }
+  }
+}
+
+@media print, screen and (min-width: 768px) {
+  #about-us {
+    .profile {
+      .summary {
+        width: 250px;
+      }
+
+      ul {
+        position: absolute;
+        top: 30px;
+        left: 300px;
+      }
+    }
+  }
 }
