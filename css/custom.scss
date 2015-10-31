@@ -4,10 +4,12 @@
 @import url(https://fonts.googleapis.com/css?family=Racing+Sans+One);
 
 $dark-magenta: #8b008b;
+$body-text-color: #333333;
 
 body {
   position: relative;
   background-color: rgba(0, 0, 0, 0);
+  color: $body-text-color;
 }
 
 
@@ -75,10 +77,27 @@ body {
     .summary {
       text-align: center;
 
+      a {
+        color: $body-text-color;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      h2:hover {
+        color: $dark-magenta;
+      }
+
       img {
         width: 150px;
         border-radius: 50%;
         border: 6px solid silver;
+
+        &:hover {
+          border: 6px solid $dark-magenta;
+          cursor: pointer;
+        }
       }
 
       p {
@@ -104,14 +123,15 @@ body {
 @media print, screen and (min-width: 768px) {
   #about-us {
     .profile {
+
       .summary {
         width: 250px;
+        float: left;
       }
 
       ul {
-        position: absolute;
-        top: 30px;
-        left: 300px;
+        margin-left: 250px;
+        padding-top: 28px;
       }
     }
   }
