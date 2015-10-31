@@ -1,5 +1,9 @@
 ---
 ---
+@import url(https://fonts.googleapis.com/css?family=Poller+One);
+@import url(https://fonts.googleapis.com/css?family=Racing+Sans+One);
+
+$dark-magenta: #8b008b;
 
 body {
   position: relative;
@@ -7,12 +11,36 @@ body {
 }
 
 
-
 .navbar {
   min-height: 50px;
-  background-color: rgba(0, 0, 0, 0);
+  /*background-color: #F8F8F8;*/
+  background-color: rgba(240, 240, 240, 0.85);
+
+  .navbar-brand {
+    font-family: 'Poller One', cursive;
+    color: $dark-magenta;
+  }
 }
 
+.article {
+  background-color: #FFFFFF;
+  padding: 8px 18px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+
+  h1 {
+    font-family: 'Racing Sans One', cursive;
+    color: darken($dark-magenta, 5%);
+  }
+
+  p {
+    font-size: 1.2em;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #4d5052;
+    text-align: justify;
+    padding: 6px 0 6px 9px;
+  }
+}
 
 #home-carousel {
 
@@ -29,7 +57,7 @@ body {
   }
 
   .carousel-indicators li {
-    border: 1px solid darkmagenta;
+    border: 1px solid $dark-magenta;
     background-color: #999 !important;
     background-color: rgba(70,70,70,0.15) !important;
   }
