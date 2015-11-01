@@ -1,16 +1,25 @@
 # Second Magenta web site
 
-Click [here](http://altabyte.github.io/second-magenta/) to go to the 
-[Second Magenta](http://altabyte.github.io/second-magenta/) web site.
+This GitHub project hosts the source code for the 
+**[Second Magenta](http://secondmagenta.com/)** web site. 
+The GitHub hosted version can be seen 
+[here](http://altabyte.github.io/second-magenta/).
 
-This GitHub [project](https://github.com/altabyte/second-magenta/) is 
-only a [Jekyll](http://jekyllrb.com/) web site, so to see the HTML and CSS
-source code you must be in the `gh-pages` 
-[branch](https://github.com/altabyte/second-magenta/tree/gh-pages).
+As this GitHub [project](https://github.com/altabyte/second-magenta/) is 
+only a [Jekyll](http://jekyllrb.com/) web site, you must switch to the `gh-pages`
+[branch](https://github.com/altabyte/second-magenta/tree/gh-pages) to see the source code.
 
 ## Setup
 
-Install Github's version of Jekyll
+Clone this repository into a dir called second_magenta_web_site
+
+    $ git clone https://github.com/altabyte/second-magenta.git second_magenta_web_site
+
+Switch to the `gh-pages` branch
+
+    $ git checkout gh-pages
+
+Install the gems listed in [Gemfile](https://github.com/altabyte/second-magenta/blob/gh-pages/Gemfile).
 
     $ bundle install --path=.bundle
 
@@ -18,7 +27,7 @@ Launch the localhost server
 
     $ bundle exec jekyll serve --baseurl ''
 
-The site will then be available at [http://localhost:4000/](http://localhost:4000/)
+The site should then be available on port **4000** [http://localhost:4000/](http://localhost:4000/)
 
 Note that without `--baseurl ''` the localhost URL will be
 [http://localhost:4000/second-magenta/](http://localhost:4000/second-magenta/)
